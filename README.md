@@ -17,7 +17,7 @@ This project is a clone of the Netflix landing page using **HTML, CSS, and JavaS
    ```
 3. Run the Tailwind CLI to build the CSS:
    ```bash
-   npx tailwindcss -i ./src/index.css -o ./style/output.css --watch
+   npx tailwindcss -i ./src/style.css -o ./style/output.css --watch
    ```
 4. Open `index.html` in your browser to view the app.
 

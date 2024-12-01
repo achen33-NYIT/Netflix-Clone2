@@ -32,8 +32,11 @@ scale=1.0"
       href="http://pngimg.com/uploads/netflix/small/netflix_PNG15.png"
     />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="index2.css" />
+    <!--  no longer in use -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!--  no longer in use -->
+    <!-- <link rel="stylesheet" href="index2.css" /> -->
     <!-- <style>
 
     </style> -->
@@ -91,7 +94,7 @@ scale=1.0"
       <section class="hero">
         <!-- hero__bg__image__container here -->
 
-        <div class="hero__bg__image__container w-full h-[80vh]">
+        <div class="hero__bg__image__container w-full h-[80vh] md:h-[100vh]">
           <!-- hero__bg__image here -->
           <img
             src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
@@ -100,29 +103,47 @@ scale=1.0"
           />
         </div>
         <!-- hero__bg__overlay here -->
-        <div class="hero__bg__overlay absolute inset-0 w-full h-[80vh] bg-black bg-opacity-40 bg-custom-gradient"></div>
+        <div
+          class="hero__bg__overlay absolute inset-0 w-full h-[80vh] bg-black bg-opacity-40 bg-custom-gradient md:h-[100vh]"
+        ></div>
 
         <!-- hero__card here -->
-        <div class="hero__card absolute top-[20%] text-center flex flex-col gap-[10px]">
+        <div
+          class="hero__card absolute top-[20%] text-center flex flex-col gap-[10px] md:top-[40%] md:left-[30%] md:-translate-x-[20%] md:-translate-y-[20%] lg:top-[50%] lg:left-[50%] lg:-translate-x-[50%] lg:-translate-y-[50%]"
+        >
           <!-- hero__title here -->
           <h1 class="hero__title font-semibold text-2xl">
             Unlimited Movies TV,<br />
             Shows and More.
           </h1>
-          <p class="hero__subtitle font-normal text-base">Watch anywhere and cancel anytime.</p>
+          <p class="hero__subtitle font-normal text-base">
+            Watch anywhere and cancel anytime.
+          </p>
           <p class="hero__description font-normal text-base mx-[50px]">
             Ready to watch? Enter your email to create or restart your
             membership .
           </p>
           <!-- email__form__container here -->
-          <div class="email__form__container flex flex-col justify-center items-center gap-[15px]">
+          <div
+            class="email__form__container flex flex-col justify-center items-center gap-[15px]"
+          >
             <!-- form__container here -->
             <div class="form__container bg-white w-[90%] h-[50px] relative">
-              <input type="text" class="email__input border-none bg-transparent w-full h-full pl-[7px]" placeholder=" " />
-              <label for="" class="email__label text-black absolute top-[28%] left-[2%] text-[rgb(153, 149, 149)] transition-all duration-500">Email Address</label>
+              <input
+                type="text"
+                class="email__input border-none bg-transparent w-full h-full pl-[7px]"
+                placeholder=" "
+              />
+              <label
+                for=""
+                class="email__label text-black absolute top-[28%] left-[2%] text-[rgb(153, 149, 149)] transition-all duration-500"
+                >Email Address</label
+              >
             </div>
             <!-- primary__button here -->
-            <button class="primary__button bg-[#dc030f] border border-[#dc030f] text-white px-5 py-3 rounded-[2px] text-[15px] tracking-[1px]">
+            <button
+              class="primary__button bg-[#dc030f] border border-[#dc030f] text-white px-5 py-3 rounded-[2px] text-[15px] tracking-[1px]"
+            >
               Get Started <i class="fal fa-chevron-right"></i>
             </button>
           </div>
