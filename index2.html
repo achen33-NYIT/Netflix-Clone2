@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-
+scale=1.0"
+    />
+
+    <link rel="stylesheet" href="./style/output.css" />
+    <!-- font awesome here-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netflix clone</title>
+    <!-- tab icon here -->
+    <link
+      rel="icon"
+      href="http://pngimg.com/uploads/netflix/small/netflix_PNG15.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index2.css" />
+    <!-- <style>
+
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <!-- navbar here -->
+
+      <nav class="absolute top-0 w-full flex justify-between p-[3%_5%] z-10">
+        <!-- navbar__brand here -->
+
+        <div class="navbar__brand w-[100px] h-full">
+          <!-- brand__logo here -->
+
+          <img
+            src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
+            alt="logo"
+            class="brand__logo w-full h-full"
+          />
+        </div>
+        <!-- navbar__nav__items here -->
+        <div class="navbar__nav__items flex gap-[10px]">
+          <!-- nav__item here -->
+
+          <div class="nav__item">
+            <!-- dropdown__container here -->
+            <div
+              class="dropdown__container border border-white p-1.5 rounded-sm bg-black bg-opacity-40"
+            >
+              <i class="fas fa-globe"></i>
+              <!-- language__drop__down here -->
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down bg-transparent border-none text-white focus:outline-none"
+              >
+                <option value="english" class="bg-black">English</option>
+                <option value="turkish" class="bg-black">Turkish</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- nav__item here -->
+          <div class="nav__item">
+            <button
+              class="signin__button bg-[#dc030f] border border-[#dc030f] text-white px-2 py-1 rounded-sm"
+            >
+              Sign in
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <!-- hero__bg__image__container here -->
+
+        <div class="hero__bg__image__container w-full h-[80vh]">
+          <!-- hero__bg__image here -->
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/vlv3/9c5457b8-9ab0-4a04-9fc1-e608d5670f1a/710d74e0-7158-408e-8d9b-23c219dee5df/IN-en-20210719-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+            alt="BG hero"
+            class="hero__bg__image w-full h-full object-cover"
+          />
+        </div>
+        <!-- hero__bg__overlay here -->
+        <div class="hero__bg__overlay absolute inset-0 w-full h-[80vh] bg-black bg-opacity-40 bg-custom-gradient"></div>
+
+        <!-- hero__card here -->
+        <div class="hero__card absolute top-[20%] text-center flex flex-col gap-[10px]">
+          <!-- hero__title here -->
+          <h1 class="hero__title font-semibold text-2xl">
+            Unlimited Movies TV,<br />
+            Shows and More.
+          </h1>
+          <p class="hero__subtitle font-normal text-base">Watch anywhere and cancel anytime.</p>
+          <p class="hero__description font-normal text-base mx-[50px]">
+            Ready to watch? Enter your email to create or restart your
+            membership .
+          </p>
+          <!-- email__form__container here -->
+          <div class="email__form__container flex flex-col justify-center items-center gap-[15px]">
+            <!-- form__container here -->
+            <div class="form__container bg-white w-[90%] h-[50px] relative">
+              <input type="text" class="email__input border-none bg-transparent w-full h-full pl-[7px]" placeholder=" " />
+              <label for="" class="email__label text-black absolute top-[28%] left-[2%] text-[rgb(153, 149, 149)] transition-all duration-500">Email Address</label>
+            </div>
+            <!-- primary__button here -->
+            <button class="primary__button bg-[#dc030f] border border-[#dc030f] text-white px-5 py-3 rounded-[2px] text-[15px] tracking-[1px]">
+              Get Started <i class="fal fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

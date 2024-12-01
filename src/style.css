@@ -1,0 +1,25 @@
+/* directives here */
+
+
+@tailwind base;       /* Includes the base styles (e.g., resets) */
+@tailwind components; /* Includes reusable component classes */
+@tailwind utilities;  /* Includes all utility classes */
+
+
+/* add preflight styles here */
+
+@layer base {
+  /* Reset margin, padding, and box-sizing */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures width includes padding */
+  }
+
+  /* Base styles for the body */
+  body {
+    background-color: black; /* Set background color */
+    color: white; /* Set text color */
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+  }
+}
